@@ -1,0 +1,40 @@
+{
+  "images": {
+    "portrait": "assets/misha-portrait.jpg"
+  },
+  "hero": {
+    "eyebrow": "Premium Barbershop · Kraków",
+    "subtitle": "Precyzyjne strzyżenie. Nowoczesny styl. Profesjonalna pielęgnacja brody."
+  },
+  "about": {
+    "title": "Rzemiosło ukryte w każdym detalu",
+    "paragraph1": "Nazywam się Misha i od lat tworzę w Krakowie miejsce, w którym strzyżenie staje się czymś więcej niż rutyną. To moment dla Ciebie — w ciszy, z kawą i pełnym skupieniem na efekcie.",
+    "paragraph2": "Pracuję w oparciu o cztery zasady: precyzja, indywidualne podejście, premium doświadczenie i dbałość o najmniejszy szczegół. Specjalizuję się w nowoczesnych fryzurach męskich oraz w stylizacji i modelowaniu brody."
+  },
+  "services": [
+    { "name": "Strzyżenie męskie", "price": "80 zł", "description": "Klasyczne lub nowoczesne strzyżenie dopasowane do kształtu głowy i stylu." },
+    { "name": "Skin Fade", "price": "100 zł", "description": "Najczystsze przejście do skóry. Precyzyjny, ostry i efektowny fade." },
+    { "name": "Broda", "price": "70 zł", "description": "Modelowanie konturów, trymowanie i pielęgnacja z gorącym ręcznikiem." },
+    { "name": "Strzyżenie + Broda", "price": "140 zł", "description": "Kompletna metamorfoza w jednej wizycie. Najlepszy wybór dla pełnego efektu." },
+    { "name": "Stylizacja włosów", "price": "50 zł", "description": "Mycie, suszenie i profesjonalna stylizacja na specjalną okazję." }
+  ],
+  "reviews": [
+    { "author": "Kamil W.", "role": "stały klient", "text": "„Najlepszy fade w Krakowie, bez dwóch zdań. Misha słucha, doradza i wykonuje wszystko w najdrobniejszym detalu. Atmosfera klasy premium.”" },
+    { "author": "Marcin P.", "role": "Kraków", "text": "„Wreszcie miejsce, gdzie broda wygląda jak należy. Profesjonalizm na każdym kroku, a efekt utrzymuje się tygodniami. Polecam w ciemno.”" },
+    { "author": "Tomasz K.", "role": "stały klient", "text": "„Precyzja kosmiczna. Przychodzę od ponad roku i za każdym razem wychodzę zadowolony. Czysto, punktualnie, z klasą.”" },
+    { "author": "Łukasz D.", "role": "Kraków", "text": "„Umówiłem się przed ślubem i to był strzał w dziesiątkę. Spokój, kawa, świetna rozmowa i fryzura idealna na zdjęcia.”" },
+    { "author": "Piotr S.", "role": "stały klient", "text": "„Jakość, której nie znajdziesz w sieciówce. Misha to rzemieślnik z prawdziwego zdarzenia. Każda wizyta to małe doświadczenie.”" },
+    { "author": "Adrian M.", "role": "Kraków", "text": "„Indywidualne podejście pełną gębą. Zaproponował fryzurę, o której bym nie pomyślał, a dostałem mnóstwo komplementów. Mistrzostwo.”" }
+  ],
+  "gallery": [],
+  "contact": {
+    "phone": "+48 600 123 456",
+    "address_line1": "ul. Floriańska 24/3",
+    "address_line2": "31-021 Kraków",
+    "hours_weekdays": "Pon–Pt: 10:00 – 20:00",
+    "hours_saturday": "Sobota: 09:00 – 16:00",
+    "hours_sunday": "Niedziela: nieczynne",
+    "instagram": "https://www.instagram.com/misha.barber.krakow",
+    "facebook": "https://www.facebook.com/misha.barber.krakow"
+  }
+}

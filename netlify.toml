@@ -1,0 +1,9 @@
+# Netlify — statyczny serwis, bez kroku budowania
+[build]
+  publish = "."
+
+# Przyjazny adres panelu edycji: /admin
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200

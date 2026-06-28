@@ -1,0 +1,83 @@
+backend:
+  name: github
+  repo: IgorCryptoTrade/misha-barber-krakow
+  branch: main
+
+media_folder: "assets"
+public_folder: "/assets"
+
+# Język interfejsu panelu
+locale: pl
+
+collections:
+  - name: tresc
+    label: "Treść strony"
+    description: "Edytuj teksty, ceny, opinie, zdjęcia i dane kontaktowe."
+    files:
+      - name: strona
+        label: "Strona główna"
+        file: "content.json"
+        description: "Wszystkie edytowalne sekcje strony."
+        fields:
+          - name: images
+            label: "Zdjęcia"
+            widget: object
+            fields:
+              - { name: portrait, label: "Główne zdjęcie Mishy (Hero + O mnie)", widget: image, required: false }
+
+          - name: hero
+            label: "Sekcja powitalna (Hero)"
+            widget: object
+            fields:
+              - { name: eyebrow, label: "Mały nagłówek nad tytułem", widget: string, required: false }
+              - { name: subtitle, label: "Podtytuł", widget: text }
+
+          - name: about
+            label: "O mnie"
+            widget: object
+            fields:
+              - { name: title, label: "Tytuł sekcji", widget: string }
+              - { name: paragraph1, label: "Akapit 1", widget: text }
+              - { name: paragraph2, label: "Akapit 2", widget: text }
+
+          - name: services
+            label: "Usługi i cennik"
+            widget: list
+            label_singular: "Usługa"
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - { name: name, label: "Nazwa usługi", widget: string }
+              - { name: price, label: "Cena (np. 80 zł)", widget: string }
+              - { name: description, label: "Opis", widget: text }
+
+          - name: reviews
+            label: "Opinie klientów"
+            widget: list
+            label_singular: "Opinia"
+            summary: "{{fields.author}}"
+            fields:
+              - { name: author, label: "Imię / podpis", widget: string }
+              - { name: role, label: "Podpis pod nazwiskiem (np. stały klient)", widget: string, required: false }
+              - { name: text, label: "Treść opinii", widget: text }
+
+          - name: gallery
+            label: "Galeria realizacji (zdjęcia fryzur/brody)"
+            widget: list
+            label_singular: "Zdjęcie"
+            summary: "{{fields.caption}}"
+            fields:
+              - { name: image, label: "Zdjęcie", widget: image }
+              - { name: caption, label: "Podpis (opcjonalnie)", widget: string, required: false }
+
+          - name: contact
+            label: "Kontakt i godziny"
+            widget: object
+            fields:
+              - { name: phone, label: "Telefon", widget: string }
+              - { name: address_line1, label: "Adres — ulica", widget: string }
+              - { name: address_line2, label: "Adres — kod i miasto", widget: string }
+              - { name: hours_weekdays, label: "Godziny — pon–pt", widget: string }
+              - { name: hours_saturday, label: "Godziny — sobota", widget: string }
+              - { name: hours_sunday, label: "Godziny — niedziela", widget: string }
+              - { name: instagram, label: "Link Instagram", widget: string }
+              - { name: facebook, label: "Link Facebook", widget: string }
