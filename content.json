@@ -1,6 +1,8 @@
 {
   "pl": {
-    "images": { "portrait": "assets/misha-portrait.jpg" },
+    "images": {
+      "portrait": "assets/misha-portrait.jpg"
+    },
     "hero": {
       "subtitle": "Precyzyjne strzyżenie. Nowoczesny styl. Profesjonalna pielęgnacja brody."
     },
@@ -10,21 +12,70 @@
       "paragraph2": "Pracuję w oparciu o cztery zasady: precyzja, indywidualne podejście, premium doświadczenie i dbałość o najmniejszy szczegół. Specjalizuję się w nowoczesnych fryzurach męskich oraz w stylizacji i modelowaniu brody."
     },
     "services": [
-      { "name": "Strzyżenie męskie", "price": "80 zł", "description": "Klasyczne lub nowoczesne strzyżenie dopasowane do kształtu głowy i stylu." },
-      { "name": "Skin Fade", "price": "100 zł", "description": "Najczystsze przejście do skóry. Precyzyjny, ostry i efektowny fade." },
-      { "name": "Broda", "price": "70 zł", "description": "Modelowanie konturów, trymowanie i pielęgnacja z gorącym ręcznikiem." },
-      { "name": "Strzyżenie + Broda", "price": "140 zł", "description": "Kompletna metamorfoza w jednej wizycie. Najlepszy wybór dla pełnego efektu." },
-      { "name": "Stylizacja włosów", "price": "50 zł", "description": "Mycie, suszenie i profesjonalna stylizacja na specjalną okazję." }
+      {
+        "name": "Strzyżenie męskie",
+        "price": "80 zł",
+        "description": "Klasyczne lub nowoczesne strzyżenie dopasowane do kształtu głowy i stylu."
+      },
+      {
+        "name": "Skin Fade",
+        "price": "100 zł",
+        "description": "Najczystsze przejście do skóry. Precyzyjny, ostry i efektowny fade."
+      },
+      {
+        "name": "Broda",
+        "price": "70 zł",
+        "description": "Modelowanie konturów, trymowanie i pielęgnacja z gorącym ręcznikiem."
+      },
+      {
+        "name": "Strzyżenie + Broda",
+        "price": "140 zł",
+        "description": "Kompletna metamorfoza w jednej wizycie. Najlepszy wybór dla pełnego efektu."
+      },
+      {
+        "name": "Stylizacja włosów",
+        "price": "50 zł",
+        "description": "Mycie, suszenie i profesjonalna stylizacja na specjalną okazję."
+      }
     ],
     "reviews": [
-      { "author": "Kamil W.", "role": "stały klient", "text": "„Najlepszy fade w Krakowie, bez dwóch zdań. Misha słucha, doradza i wykonuje wszystko w najdrobniejszym detalu. Atmosfera klasy premium.”" },
-      { "author": "Marcin P.", "role": "Kraków", "text": "„Wreszcie miejsce, gdzie broda wygląda jak należy. Profesjonalizm na każdym kroku, a efekt utrzymuje się tygodniami. Polecam w ciemno.”" },
-      { "author": "Tomasz K.", "role": "stały klient", "text": "„Precyzja kosmiczna. Przychodzę od ponad roku i za każdym razem wychodzę zadowolony. Czysto, punktualnie, z klasą.”" },
-      { "author": "Łukasz D.", "role": "Kraków", "text": "„Umówiłem się przed ślubem i to był strzał w dziesiątkę. Spokój, kawa, świetna rozmowa i fryzura idealna na zdjęcia.”" },
-      { "author": "Piotr S.", "role": "stały klient", "text": "„Jakość, której nie znajdziesz w sieciówce. Misha to rzemieślnik z prawdziwego zdarzenia. Każda wizyta to małe doświadczenie.”" },
-      { "author": "Adrian M.", "role": "Kraków", "text": "„Indywidualne podejście pełną gębą. Zaproponował fryzurę, o której bym nie pomyślał, a dostałem mnóstwo komplementów. Mistrzostwo.”" }
+      {
+        "author": "Kamil W.",
+        "role": "stały klient",
+        "text": "„Najlepszy fade w Krakowie, bez dwóch zdań. Misha słucha, doradza i wykonuje wszystko w najdrobniejszym detalu. Atmosfera klasy premium.”"
+      },
+      {
+        "author": "Marcin P.",
+        "role": "Kraków",
+        "text": "„Wreszcie miejsce, gdzie broda wygląda jak należy. Profesjonalizm na każdym kroku, a efekt utrzymuje się tygodniami. Polecam w ciemno.”"
+      },
+      {
+        "author": "Tomasz K.",
+        "role": "stały klient",
+        "text": "„Precyzja kosmiczna. Przychodzę od ponad roku i za każdym razem wychodzę zadowolony. Czysto, punktualnie, z klasą.”"
+      },
+      {
+        "author": "Łukasz D.",
+        "role": "Kraków",
+        "text": "„Umówiłem się przed ślubem i to był strzał w dziesiątkę. Spokój, kawa, świetna rozmowa i fryzura idealna na zdjęcia.”"
+      },
+      {
+        "author": "Piotr S.",
+        "role": "stały klient",
+        "text": "„Jakość, której nie znajdziesz w sieciówce. Misha to rzemieślnik z prawdziwego zdarzenia. Każda wizyta to małe doświadczenie.”"
+      },
+      {
+        "author": "Adrian M.",
+        "role": "Kraków",
+        "text": "„Indywidualne podejście pełną gębą. Zaproponował fryzurę, o której bym nie pomyślał, a dostałem mnóstwo komplementów. Mistrzostwo.”"
+      }
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "image": "/assets/IMG_4877.jpeg",
+        "caption": ""
+      }
+    ],
     "contact": {
       "phone": "+48 600 123 456",
       "address_line1": "ul. Floriańska 24/3",
@@ -37,7 +88,9 @@
     }
   },
   "en": {
-    "images": { "portrait": "assets/misha-portrait.jpg" },
+    "images": {
+      "portrait": "assets/misha-portrait.jpg"
+    },
     "hero": {
       "subtitle": "Precise haircuts. Modern style. Professional beard care."
     },
@@ -47,21 +100,69 @@
       "paragraph2": "I work by four principles: precision, an individual approach, a premium experience and attention to the smallest detail. I specialise in modern men’s haircuts and in beard styling and shaping."
     },
     "services": [
-      { "name": "Men’s haircut", "price": "80 zł", "description": "A classic or modern cut tailored to your head shape and style." },
-      { "name": "Skin Fade", "price": "100 zł", "description": "The cleanest fade to the skin. Precise, sharp and striking." },
-      { "name": "Beard", "price": "70 zł", "description": "Contour shaping, trimming and care with a hot towel." },
-      { "name": "Haircut + Beard", "price": "140 zł", "description": "A complete makeover in a single visit. The best choice for the full effect." },
-      { "name": "Hair styling", "price": "50 zł", "description": "Washing, drying and professional styling for a special occasion." }
+      {
+        "name": "Men’s haircut",
+        "price": "80 zł",
+        "description": "A classic or modern cut tailored to your head shape and style."
+      },
+      {
+        "name": "Skin Fade",
+        "price": "100 zł",
+        "description": "The cleanest fade to the skin. Precise, sharp and striking."
+      },
+      {
+        "name": "Beard",
+        "price": "70 zł",
+        "description": "Contour shaping, trimming and care with a hot towel."
+      },
+      {
+        "name": "Haircut + Beard",
+        "price": "140 zł",
+        "description": "A complete makeover in a single visit. The best choice for the full effect."
+      },
+      {
+        "name": "Hair styling",
+        "price": "50 zł",
+        "description": "Washing, drying and professional styling for a special occasion."
+      }
     ],
     "reviews": [
-      { "author": "Kamil W.", "role": "regular client", "text": "“The best fade in Kraków, no question. Misha listens, advises and nails every smallest detail. A premium-class atmosphere.”" },
-      { "author": "Marcin P.", "role": "Kraków", "text": "“Finally a place where a beard looks the way it should. Professionalism at every step, and the result lasts for weeks. I recommend it blindly.”" },
-      { "author": "Tomasz K.", "role": "regular client", "text": "“Cosmic precision. I’ve been coming for over a year and leave satisfied every time. Clean, punctual, with class.”" },
-      { "author": "Łukasz D.", "role": "Kraków", "text": "“I booked before my wedding and it was a bullseye. Calm, coffee, great conversation and a haircut perfect for the photos.”" },
-      { "author": "Piotr S.", "role": "regular client", "text": "“Quality you won’t find in a chain salon. Misha is a true craftsman. Every visit is a little experience.”" },
-      { "author": "Adrian M.", "role": "Kraków", "text": "“A truly individual approach. He suggested a haircut I’d never have thought of, and I got tons of compliments. Mastery.”" }
+      {
+        "author": "Kamil W.",
+        "role": "regular client",
+        "text": "“The best fade in Kraków, no question. Misha listens, advises and nails every smallest detail. A premium-class atmosphere.”"
+      },
+      {
+        "author": "Marcin P.",
+        "role": "Kraków",
+        "text": "“Finally a place where a beard looks the way it should. Professionalism at every step, and the result lasts for weeks. I recommend it blindly.”"
+      },
+      {
+        "author": "Tomasz K.",
+        "role": "regular client",
+        "text": "“Cosmic precision. I’ve been coming for over a year and leave satisfied every time. Clean, punctual, with class.”"
+      },
+      {
+        "author": "Łukasz D.",
+        "role": "Kraków",
+        "text": "“I booked before my wedding and it was a bullseye. Calm, coffee, great conversation and a haircut perfect for the photos.”"
+      },
+      {
+        "author": "Piotr S.",
+        "role": "regular client",
+        "text": "“Quality you won’t find in a chain salon. Misha is a true craftsman. Every visit is a little experience.”"
+      },
+      {
+        "author": "Adrian M.",
+        "role": "Kraków",
+        "text": "“A truly individual approach. He suggested a haircut I’d never have thought of, and I got tons of compliments. Mastery.”"
+      }
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "image": "/assets/IMG_4877.jpeg"
+      }
+    ],
     "contact": {
       "phone": "+48 600 123 456",
       "address_line1": "ul. Floriańska 24/3",
@@ -74,7 +175,9 @@
     }
   },
   "uk": {
-    "images": { "portrait": "assets/misha-portrait.jpg" },
+    "images": {
+      "portrait": "assets/misha-portrait.jpg"
+    },
     "hero": {
       "subtitle": "Точні стрижки. Сучасний стиль. Професійний догляд за бородою."
     },
@@ -84,21 +187,69 @@
       "paragraph2": "Я працюю за чотирма принципами: точність, індивідуальний підхід, преміальний досвід і увага до найменшої деталі. Спеціалізуюся на сучасних чоловічих стрижках, а також на стилізації та моделюванні бороди."
     },
     "services": [
-      { "name": "Чоловіча стрижка", "price": "80 zł", "description": "Класична або сучасна стрижка, підібрана під форму голови та стиль." },
-      { "name": "Skin Fade", "price": "100 zł", "description": "Найчистіший перехід до шкіри. Точний, чіткий та ефектний фейд." },
-      { "name": "Борода", "price": "70 zł", "description": "Моделювання контурів, підстригання та догляд з гарячим рушником." },
-      { "name": "Стрижка + Борода", "price": "140 zł", "description": "Повне перетворення за один візит. Найкращий вибір для повного ефекту." },
-      { "name": "Укладка волосся", "price": "50 zł", "description": "Миття, сушіння та професійна укладка до особливої події." }
+      {
+        "name": "Чоловіча стрижка",
+        "price": "80 zł",
+        "description": "Класична або сучасна стрижка, підібрана під форму голови та стиль."
+      },
+      {
+        "name": "Skin Fade",
+        "price": "100 zł",
+        "description": "Найчистіший перехід до шкіри. Точний, чіткий та ефектний фейд."
+      },
+      {
+        "name": "Борода",
+        "price": "70 zł",
+        "description": "Моделювання контурів, підстригання та догляд з гарячим рушником."
+      },
+      {
+        "name": "Стрижка + Борода",
+        "price": "140 zł",
+        "description": "Повне перетворення за один візит. Найкращий вибір для повного ефекту."
+      },
+      {
+        "name": "Укладка волосся",
+        "price": "50 zł",
+        "description": "Миття, сушіння та професійна укладка до особливої події."
+      }
     ],
     "reviews": [
-      { "author": "Kamil W.", "role": "постійний клієнт", "text": "«Найкращий фейд у Кракові, без питань. Міша слухає, радить і виконує все до найменшої деталі. Атмосфера преміумкласу.»" },
-      { "author": "Marcin P.", "role": "Краків", "text": "«Нарешті місце, де борода виглядає як належить. Професіоналізм на кожному кроці, а результат тримається тижнями. Рекомендую не вагаючись.»" },
-      { "author": "Tomasz K.", "role": "постійний клієнт", "text": "«Космічна точність. Ходжу вже понад рік і щоразу виходжу задоволеним. Чисто, вчасно, зі смаком.»" },
-      { "author": "Łukasz D.", "role": "Краків", "text": "«Записався перед весіллям — і це було влучання в десятку. Спокій, кава, чудова розмова і зачіска, ідеальна для фото.»" },
-      { "author": "Piotr S.", "role": "постійний клієнт", "text": "«Якість, якої не знайдеш у мережевому салоні. Міша — справжній майстер. Кожен візит — маленька подія.»" },
-      { "author": "Adrian M.", "role": "Краків", "text": "«По-справжньому індивідуальний підхід. Запропонував зачіску, про яку я б і не подумав, і я отримав купу компліментів. Майстерність.»" }
+      {
+        "author": "Kamil W.",
+        "role": "постійний клієнт",
+        "text": "«Найкращий фейд у Кракові, без питань. Міша слухає, радить і виконує все до найменшої деталі. Атмосфера преміумкласу.»"
+      },
+      {
+        "author": "Marcin P.",
+        "role": "Краків",
+        "text": "«Нарешті місце, де борода виглядає як належить. Професіоналізм на кожному кроці, а результат тримається тижнями. Рекомендую не вагаючись.»"
+      },
+      {
+        "author": "Tomasz K.",
+        "role": "постійний клієнт",
+        "text": "«Космічна точність. Ходжу вже понад рік і щоразу виходжу задоволеним. Чисто, вчасно, зі смаком.»"
+      },
+      {
+        "author": "Łukasz D.",
+        "role": "Краків",
+        "text": "«Записався перед весіллям — і це було влучання в десятку. Спокій, кава, чудова розмова і зачіска, ідеальна для фото.»"
+      },
+      {
+        "author": "Piotr S.",
+        "role": "постійний клієнт",
+        "text": "«Якість, якої не знайдеш у мережевому салоні. Міша — справжній майстер. Кожен візит — маленька подія.»"
+      },
+      {
+        "author": "Adrian M.",
+        "role": "Краків",
+        "text": "«По-справжньому індивідуальний підхід. Запропонував зачіску, про яку я б і не подумав, і я отримав купу компліментів. Майстерність.»"
+      }
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "image": "/assets/IMG_4877.jpeg"
+      }
+    ],
     "contact": {
       "phone": "+48 600 123 456",
       "address_line1": "вул. Флоріанська 24/3",
