@@ -9,75 +9,88 @@ public_folder: "/assets"
 # Język interfejsu panelu
 locale: pl
 
+# Wielojęzyczność: jeden plik content.json z kluczami pl / en / uk
+i18n:
+  structure: single_file
+  locales: [pl, en, uk]
+  default_locale: pl
+
 collections:
   - name: tresc
     label: "Treść strony"
-    description: "Edytuj teksty, ceny, opinie, zdjęcia i dane kontaktowe."
+    description: "Edytuj teksty, ceny, opinie, zdjęcia i dane kontaktowe w 3 językach (PL / EN / UK)."
     files:
       - name: strona
         label: "Strona główna"
         file: "content.json"
-        description: "Wszystkie edytowalne sekcje strony."
+        i18n: true
+        description: "Zakładki języków pojawią się u góry edytora."
         fields:
           - name: images
             label: "Zdjęcia"
             widget: object
+            i18n: duplicate
             fields:
-              - { name: portrait, label: "Główne zdjęcie Mishy (Hero + O mnie)", widget: image, required: false }
+              - { name: portrait, label: "Główne zdjęcie Mishy (Hero + O mnie)", widget: image, required: false, i18n: duplicate }
 
           - name: hero
             label: "Sekcja powitalna (Hero)"
             widget: object
+            i18n: true
             fields:
-              - { name: eyebrow, label: "Mały nagłówek nad tytułem", widget: string, required: false }
-              - { name: subtitle, label: "Podtytuł", widget: text }
+              - { name: subtitle, label: "Podtytuł", widget: text, i18n: true }
 
           - name: about
             label: "O mnie"
             widget: object
+            i18n: true
             fields:
-              - { name: title, label: "Tytuł sekcji", widget: string }
-              - { name: paragraph1, label: "Akapit 1", widget: text }
-              - { name: paragraph2, label: "Akapit 2", widget: text }
+              - { name: title, label: "Tytuł sekcji", widget: string, i18n: true }
+              - { name: paragraph1, label: "Akapit 1", widget: text, i18n: true }
+              - { name: paragraph2, label: "Akapit 2", widget: text, i18n: true }
 
           - name: services
             label: "Usługi i cennik"
             widget: list
+            i18n: true
             label_singular: "Usługa"
             summary: "{{fields.name}} — {{fields.price}}"
             fields:
-              - { name: name, label: "Nazwa usługi", widget: string }
-              - { name: price, label: "Cena (np. 80 zł)", widget: string }
-              - { name: description, label: "Opis", widget: text }
+              - { name: name, label: "Nazwa usługi", widget: string, i18n: true }
+              - { name: price, label: "Cena (np. 80 zł)", widget: string, i18n: duplicate }
+              - { name: description, label: "Opis", widget: text, i18n: true }
 
           - name: reviews
             label: "Opinie klientów"
             widget: list
+            i18n: true
             label_singular: "Opinia"
             summary: "{{fields.author}}"
             fields:
-              - { name: author, label: "Imię / podpis", widget: string }
-              - { name: role, label: "Podpis pod nazwiskiem (np. stały klient)", widget: string, required: false }
-              - { name: text, label: "Treść opinii", widget: text }
+              - { name: author, label: "Imię / podpis", widget: string, i18n: duplicate }
+              - { name: role, label: "Podpis (np. stały klient)", widget: string, required: false, i18n: true }
+              - { name: text, label: "Treść opinii", widget: text, i18n: true }
 
           - name: gallery
             label: "Galeria realizacji (zdjęcia fryzur/brody)"
             widget: list
+            i18n: true
             label_singular: "Zdjęcie"
             summary: "{{fields.caption}}"
             fields:
-              - { name: image, label: "Zdjęcie", widget: image }
-              - { name: caption, label: "Podpis (opcjonalnie)", widget: string, required: false }
+              - { name: image, label: "Zdjęcie", widget: image, i18n: duplicate }
+              - { name: caption, label: "Podpis (opcjonalnie)", widget: string, required: false, i18n: true }
 
           - name: contact
             label: "Kontakt i godziny"
             widget: object
+            i18n: true
             fields:
-              - { name: phone, label: "Telefon", widget: string }
-              - { name: address_line1, label: "Adres — ulica", widget: string }
-              - { name: address_line2, label: "Adres — kod i miasto", widget: string }
-              - { name: hours_weekdays, label: "Godziny — pon–pt", widget: string }
-              - { name: hours_saturday, label: "Godziny — sobota", widget: string }
-              - { name: hours_sunday, label: "Godziny — niedziela", widget: string }
-              - { name: instagram, label: "Link Instagram", widget: string }
-              - { name: facebook, label: "Link Facebook", widget: string }
+              - { name: phone, label: "Telefon", widget: string, i18n: duplicate }
+              - { name: address_line1, label: "Adres — ulica", widget: string, i18n: true }
+              - { name: address_line2, label: "Adres — kod i miasto", widget: string, i18n: true }
+              - { name: hours_weekdays, label: "Godziny — pon–pt", widget: string, i18n: true }
+              - { name: hours_saturday, label: "Godziny — sobota", widget: string, i18n: true }
+              - { name: hours_sunday, label: "Godziny — niedziela", widget: string, i18n: true }
+              - { name: instagram, label: "Link Instagram", widget: string, i18n: duplicate }
+              - { name: facebook, label: "Link Facebook", widget: string, i18n: duplicate }

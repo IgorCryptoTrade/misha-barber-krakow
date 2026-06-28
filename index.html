@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Primary SEO -->
+  <!-- Primary SEO (default: Polish — local Kraków market) -->
   <title>Misha Barber Kraków — Barbershop, Skin Fade i Stylizacja Brody</title>
   <meta name="description" content="Misha Barber Kraków — premium barbershop. Precyzyjne strzyżenie męskie, perfekcyjny skin fade i profesjonalna pielęgnacja brody. Umów wizytę w centrum Krakowa." />
   <meta name="keywords" content="Barber Kraków, Barbershop Kraków, Fryzjer męski Kraków, Skin Fade Kraków, Broda Kraków, strzyżenie męskie Kraków" />
@@ -23,6 +23,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="business.business" />
   <meta property="og:locale" content="pl_PL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="uk_UA" />
   <meta property="og:site_name" content="Misha Barber Kraków" />
   <meta property="og:title" content="Misha Barber Kraków — Premium Barbershop" />
   <meta property="og:description" content="Precyzyjne strzyżenie. Nowoczesny styl. Profesjonalna pielęgnacja brody. Umów wizytę w sercu Krakowa." />
@@ -100,14 +102,19 @@
         MISHA<span>BARBER</span>
       </a>
       <nav class="nav__links" id="navLinks" aria-label="Nawigacja główna">
-        <a href="#about">O mnie</a>
-        <a href="#why">Dlaczego ja</a>
-        <a href="#gallery">Realizacje</a>
-        <a href="#services">Usługi</a>
-        <a href="#reviews">Opinie</a>
-        <a href="#booking" class="nav__cta">Umów wizytę</a>
+        <a href="#about" data-i18n="nav.about">O mnie</a>
+        <a href="#why" data-i18n="nav.why">Dlaczego ja</a>
+        <a href="#gallery" data-i18n="nav.gallery">Realizacje</a>
+        <a href="#services" data-i18n="nav.services">Usługi</a>
+        <a href="#reviews" data-i18n="nav.reviews">Opinie</a>
+        <a href="#booking" class="nav__cta" data-i18n="cta.book">Umów wizytę</a>
       </nav>
-      <button class="nav__burger" id="burger" aria-label="Otwórz menu" aria-expanded="false">
+      <div class="lang-switch" id="langSwitch" role="group" aria-label="Język / Language">
+        <button type="button" data-lang="pl" class="is-active">PL</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="uk">UA</button>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -120,16 +127,16 @@
       <div class="hero__overlay"></div>
     </div>
     <div class="hero__content reveal">
-      <p class="hero__eyebrow">Premium Barbershop · Kraków</p>
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Premium Barbershop · Kraków</p>
       <h1 class="hero__title">Misha Barber<span>Kraków</span></h1>
       <p class="hero__subtitle" data-cms="hero.subtitle">Precyzyjne strzyżenie. Nowoczesny styl. Profesjonalna pielęgnacja brody.</p>
       <div class="hero__actions">
-        <a href="#booking" class="btn btn--gold">Umów wizytę</a>
-        <a href="#gallery" class="btn btn--ghost">Zobacz realizacje</a>
+        <a href="#booking" class="btn btn--gold" data-i18n="cta.book">Umów wizytę</a>
+        <a href="#gallery" class="btn btn--ghost" data-i18n="cta.gallery">Zobacz realizacje</a>
       </div>
     </div>
-    <a href="#about" class="scroll-ind" aria-label="Przewiń w dół">
-      <span class="scroll-ind__text">Przewiń</span>
+    <a href="#about" class="scroll-ind" aria-label="Scroll">
+      <span class="scroll-ind__text" data-i18n="scroll">Przewiń</span>
       <span class="scroll-ind__line"></span>
     </a>
   </section>
@@ -142,19 +149,19 @@
         <div class="about__badge">EST. 2018 · KRAKÓW</div>
       </div>
       <div class="about__text reveal">
-        <p class="section__eyebrow">O mnie</p>
+        <p class="section__eyebrow" data-i18n="about.eyebrow">O mnie</p>
         <h2 class="section__title" data-cms="about.title">Rzemiosło ukryte w&nbsp;każdym detalu</h2>
         <p data-cms="about.paragraph1">Nazywam się <strong>Misha</strong> i&nbsp;od lat tworzę w&nbsp;Krakowie miejsce, w&nbsp;którym strzyżenie staje się czymś więcej niż rutyną. To moment dla Ciebie — w&nbsp;ciszy, z&nbsp;kawą i&nbsp;pełnym skupieniem na efekcie.</p>
         <p data-cms="about.paragraph2">Pracuję w&nbsp;oparciu o&nbsp;cztery zasady: precyzja, indywidualne podejście, premium doświadczenie i&nbsp;dbałość o&nbsp;najmniejszy szczegół. Specjalizuję się w&nbsp;nowoczesnych fryzurach męskich oraz w&nbsp;stylizacji i&nbsp;modelowaniu brody.</p>
         <ul class="about__list">
-          <li>Precyzja w&nbsp;każdym cięciu</li>
-          <li>Indywidualne podejście do klienta</li>
-          <li>Premium doświadczenie i&nbsp;atmosfera</li>
-          <li>Nowoczesne fryzury i&nbsp;fade</li>
-          <li>Stylizacja oraz modelowanie brody</li>
-          <li>Dbałość o&nbsp;najmniejszy detal</li>
+          <li data-i18n="about.li1">Precyzja w&nbsp;każdym cięciu</li>
+          <li data-i18n="about.li2">Indywidualne podejście do klienta</li>
+          <li data-i18n="about.li3">Premium doświadczenie i&nbsp;atmosfera</li>
+          <li data-i18n="about.li4">Nowoczesne fryzury i&nbsp;fade</li>
+          <li data-i18n="about.li5">Stylizacja oraz modelowanie brody</li>
+          <li data-i18n="about.li6">Dbałość o&nbsp;najmniejszy detal</li>
         </ul>
-        <a href="#services" class="btn btn--outline">Poznaj usługi</a>
+        <a href="#services" class="btn btn--outline" data-i18n="about.cta">Poznaj usługi</a>
       </div>
     </div>
   </section>
@@ -162,51 +169,51 @@
   <!-- ===== WHY ===== -->
   <section class="why" id="why">
     <div class="why__head reveal">
-      <p class="section__eyebrow">Dlaczego ja</p>
-      <h2 class="section__title">Doświadczenie, które czuć od&nbsp;progu</h2>
+      <p class="section__eyebrow" data-i18n="why.eyebrow">Dlaczego ja</p>
+      <h2 class="section__title" data-i18n="why.title">Doświadczenie, które czuć od&nbsp;progu</h2>
     </div>
     <div class="why__grid">
       <article class="feature reveal">
         <div class="feature__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
         </div>
-        <h3>Indywidualne podejście</h3>
-        <p>Każda wizyta zaczyna się od rozmowy. Dobieram styl do Twojego typu urody, charakteru i&nbsp;trybu życia.</p>
+        <h3 data-i18n="why.f1.t">Indywidualne podejście</h3>
+        <p data-i18n="why.f1.d">Każda wizyta zaczyna się od rozmowy. Dobieram styl do Twojego typu urody, charakteru i&nbsp;trybu życia.</p>
       </article>
       <article class="feature reveal">
         <div class="feature__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 12h6M15 12h6M9 6v12M15 6v12"/><circle cx="12" cy="12" r="2"/></svg>
         </div>
-        <h3>Perfekcyjny Fade</h3>
-        <p>Płynne przejścia bez widocznych granic. Skin fade i&nbsp;low fade wykonane z&nbsp;chirurgiczną precyzją.</p>
+        <h3 data-i18n="why.f2.t">Perfekcyjny Fade</h3>
+        <p data-i18n="why.f2.d">Płynne przejścia bez widocznych granic. Skin fade i&nbsp;low fade wykonane z&nbsp;chirurgiczną precyzją.</p>
       </article>
       <article class="feature reveal">
         <div class="feature__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l2.5 6.5L21 9l-5 4 1.5 7L12 16l-5.5 4L8 13 3 9l6.5-.5z"/></svg>
         </div>
-        <h3>Nowoczesne fryzury</h3>
-        <p>Aktualne trendy i&nbsp;klasyka w&nbsp;nowej odsłonie. Fryzury, które działają również poza fotelem.</p>
+        <h3 data-i18n="why.f3.t">Nowoczesne fryzury</h3>
+        <p data-i18n="why.f3.d">Aktualne trendy i&nbsp;klasyka w&nbsp;nowej odsłonie. Fryzury, które działają również poza fotelem.</p>
       </article>
       <article class="feature reveal">
         <div class="feature__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 4c2 4 2 8 0 12M18 4c-2 4-2 8 0 12M6 16c3 3 9 3 12 0"/></svg>
         </div>
-        <h3>Stylizacja brody</h3>
-        <p>Modelowanie konturów, gorący ręcznik i&nbsp;pielęgnacja olejkami. Broda, która podkreśla rysy twarzy.</p>
+        <h3 data-i18n="why.f4.t">Stylizacja brody</h3>
+        <p data-i18n="why.f4.d">Modelowanie konturów, gorący ręcznik i&nbsp;pielęgnacja olejkami. Broda, która podkreśla rysy twarzy.</p>
       </article>
       <article class="feature reveal">
         <div class="feature__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
         </div>
-        <h3>Profesjonalizm</h3>
-        <p>Sterylne narzędzia, punktualność i&nbsp;pełne skupienie. Czujesz, że jesteś w&nbsp;dobrych rękach.</p>
+        <h3 data-i18n="why.f5.t">Profesjonalizm</h3>
+        <p data-i18n="why.f5.d">Sterylne narzędzia, punktualność i&nbsp;pełne skupienie. Czujesz, że jesteś w&nbsp;dobrych rękach.</p>
       </article>
       <article class="feature reveal">
         <div class="feature__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19l1-5.8L3.5 9.2l5.9-.9z"/></svg>
         </div>
-        <h3>Najwyższa jakość</h3>
-        <p>Premium kosmetyki i&nbsp;sprawdzone techniki. Efekt, który wygląda świetnie jeszcze długo po wizycie.</p>
+        <h3 data-i18n="why.f6.t">Najwyższa jakość</h3>
+        <p data-i18n="why.f6.d">Premium kosmetyki i&nbsp;sprawdzone techniki. Efekt, który wygląda świetnie jeszcze długo po wizycie.</p>
       </article>
     </div>
   </section>
@@ -214,29 +221,28 @@
   <!-- ===== GALLERY ===== -->
   <section class="gallery" id="gallery">
     <div class="gallery__head reveal">
-      <p class="section__eyebrow">Realizacje</p>
-      <h2 class="section__title">Portfolio strzyżeń i&nbsp;brody</h2>
-      <p class="gallery__lead">Wybrane prace prosto z&nbsp;fotela. Fade, klasyka, broda i&nbsp;pełne metamorfozy.</p>
+      <p class="section__eyebrow" data-i18n="gallery.eyebrow">Realizacje</p>
+      <h2 class="section__title" data-i18n="gallery.title">Portfolio strzyżeń i&nbsp;brody</h2>
+      <p class="gallery__lead" data-i18n="gallery.lead">Wybrane prace prosto z&nbsp;fotela. Fade, klasyka, broda i&nbsp;pełne metamorfozy.</p>
     </div>
     <div class="masonry" id="masonry">
-      <!-- Tiles render as elegant placeholders; replace data-tile content with photos in /assets -->
       <figure class="tile tile--tall reveal" data-tile="Skin Fade"><span>Skin Fade</span></figure>
-      <figure class="tile reveal" data-tile="Broda"><span>Modelowanie brody</span></figure>
+      <figure class="tile reveal" data-tile="Broda"><span>Beard</span></figure>
       <figure class="tile reveal" data-tile="Classic"><span>Classic Cut</span></figure>
-      <figure class="tile tile--wide reveal" data-tile="Metamorfoza"><span>Pełna metamorfoza</span></figure>
+      <figure class="tile tile--wide reveal" data-tile="Metamorfoza"><span>Full makeover</span></figure>
       <figure class="tile reveal" data-tile="Pompadour"><span>Pompadour</span></figure>
       <figure class="tile tile--tall reveal" data-tile="Low Fade"><span>Low Fade</span></figure>
       <figure class="tile reveal" data-tile="Crop"><span>Texture Crop</span></figure>
       <figure class="tile reveal" data-tile="Buzz"><span>Buzz &amp; Beard</span></figure>
     </div>
-    <p class="gallery__note">Galeria pełnych zdjęć w&nbsp;przygotowaniu — zajrzyj na <a href="https://www.instagram.com/misha.barber.krakow" target="_blank" rel="noopener">Instagram</a>.</p>
+    <p class="gallery__note" data-i18n-html="gallery.note">Galeria pełnych zdjęć w&nbsp;przygotowaniu — zajrzyj na <a href="https://www.instagram.com/misha.barber.krakow" target="_blank" rel="noopener">Instagram</a>.</p>
   </section>
 
   <!-- ===== SERVICES ===== -->
   <section class="services" id="services">
     <div class="services__head reveal">
-      <p class="section__eyebrow">Usługi</p>
-      <h2 class="section__title">Cennik i&nbsp;zakres usług</h2>
+      <p class="section__eyebrow" data-i18n="services.eyebrow">Usługi</p>
+      <h2 class="section__title" data-i18n="services.title">Cennik i&nbsp;zakres usług</h2>
     </div>
     <div class="services__grid">
       <article class="service reveal">
@@ -254,7 +260,7 @@
         </div>
         <h3 data-cms="services.1.name">Skin Fade</h3>
         <p data-cms="services.1.description">Najczystsze przejście do skóry. Precyzyjny, ostry i&nbsp;efektowny fade.</p>
-        <span class="service__tag">Najczęściej wybierane</span>
+        <span class="service__tag" data-i18n="services.tag">Najczęściej wybierane</span>
       </article>
       <article class="service reveal">
         <div class="service__top">
@@ -281,43 +287,43 @@
         <p data-cms="services.4.description">Mycie, suszenie i&nbsp;profesjonalna stylizacja na specjalną okazję.</p>
       </article>
     </div>
-    <p class="services__note">Ceny orientacyjne. Finalna wycena ustalana podczas konsultacji przed wizytą.</p>
+    <p class="services__note" data-i18n="services.note">Ceny orientacyjne. Finalna wycena ustalana podczas konsultacji przed wizytą.</p>
   </section>
 
   <!-- ===== TESTIMONIALS ===== -->
   <section class="reviews" id="reviews">
     <div class="reviews__head reveal">
-      <p class="section__eyebrow">Opinie</p>
-      <h2 class="section__title">Co mówią klienci</h2>
+      <p class="section__eyebrow" data-i18n="reviews.eyebrow">Opinie</p>
+      <h2 class="section__title" data-i18n="reviews.title">Co mówią klienci</h2>
     </div>
     <div class="reviews__grid">
       <blockquote class="review reveal">
-        <div class="review__stars" aria-label="Ocena 5 na 5">★★★★★</div>
+        <div class="review__stars" aria-label="5/5">★★★★★</div>
         <p data-cms="reviews.0.text">„Najlepszy fade w&nbsp;Krakowie, bez dwóch zdań. Misha słucha, doradza i&nbsp;wykonuje wszystko w&nbsp;najdrobniejszym detalu. Atmosfera klasy premium.”</p>
         <footer><span data-cms="reviews.0.author">Kamil W.</span> · <span data-cms="reviews.0.role">stały klient</span></footer>
       </blockquote>
       <blockquote class="review reveal">
-        <div class="review__stars" aria-label="Ocena 5 na 5">★★★★★</div>
+        <div class="review__stars" aria-label="5/5">★★★★★</div>
         <p data-cms="reviews.1.text">„Wreszcie miejsce, gdzie broda wygląda jak należy. Profesjonalizm na każdym kroku, a&nbsp;efekt utrzymuje się tygodniami. Polecam w&nbsp;ciemno.”</p>
         <footer><span data-cms="reviews.1.author">Marcin P.</span> · <span data-cms="reviews.1.role">Kraków</span></footer>
       </blockquote>
       <blockquote class="review reveal">
-        <div class="review__stars" aria-label="Ocena 5 na 5">★★★★★</div>
+        <div class="review__stars" aria-label="5/5">★★★★★</div>
         <p data-cms="reviews.2.text">„Precyzja kosmiczna. Przychodzę od ponad roku i&nbsp;za każdym razem wychodzę zadowolony. Czysto, punktualnie, z&nbsp;klasą.”</p>
         <footer><span data-cms="reviews.2.author">Tomasz K.</span> · <span data-cms="reviews.2.role">stały klient</span></footer>
       </blockquote>
       <blockquote class="review reveal">
-        <div class="review__stars" aria-label="Ocena 5 na 5">★★★★★</div>
+        <div class="review__stars" aria-label="5/5">★★★★★</div>
         <p data-cms="reviews.3.text">„Umówiłem się przed ślubem i&nbsp;to był strzał w&nbsp;dziesiątkę. Spokój, kawa, świetna rozmowa i&nbsp;fryzura idealna na zdjęcia.”</p>
         <footer><span data-cms="reviews.3.author">Łukasz D.</span> · <span data-cms="reviews.3.role">Kraków</span></footer>
       </blockquote>
       <blockquote class="review reveal">
-        <div class="review__stars" aria-label="Ocena 5 na 5">★★★★★</div>
+        <div class="review__stars" aria-label="5/5">★★★★★</div>
         <p data-cms="reviews.4.text">„Jakość, której nie znajdziesz w&nbsp;sieciówce. Misha to rzemieślnik z&nbsp;prawdziwego zdarzenia. Każda wizyta to małe doświadczenie.”</p>
         <footer><span data-cms="reviews.4.author">Piotr S.</span> · <span data-cms="reviews.4.role">stały klient</span></footer>
       </blockquote>
       <blockquote class="review reveal">
-        <div class="review__stars" aria-label="Ocena 5 na 5">★★★★★</div>
+        <div class="review__stars" aria-label="5/5">★★★★★</div>
         <p data-cms="reviews.5.text">„Indywidualne podejście pełną gębą. Zaproponował fryzurę, o&nbsp;której bym nie pomyślał, a&nbsp;dostałem mnóstwo komplementów. Mistrzostwo.”</p>
         <footer><span data-cms="reviews.5.author">Adrian M.</span> · <span data-cms="reviews.5.role">Kraków</span></footer>
       </blockquote>
@@ -327,11 +333,11 @@
   <!-- ===== BOOKING CTA ===== -->
   <section class="booking" id="booking">
     <div class="booking__inner reveal">
-      <p class="section__eyebrow">Rezerwacja</p>
-      <h2 class="booking__title">Gotowy na nowy wygląd?</h2>
-      <p class="booking__sub">Zarezerwuj swój termin i&nbsp;przekonaj się, czym jest strzyżenie w&nbsp;klasie premium.</p>
-      <a href="tel:+48600123456" class="btn btn--gold btn--xl" data-cms-tel>Umów wizytę</a>
-      <p class="booking__phone">lub zadzwoń: <a href="tel:+48600123456" data-cms="contact.phone" data-cms-tel>+48 600 123 456</a></p>
+      <p class="section__eyebrow" data-i18n="booking.eyebrow">Rezerwacja</p>
+      <h2 class="booking__title" data-i18n="booking.title">Gotowy na nowy wygląd?</h2>
+      <p class="booking__sub" data-i18n="booking.sub">Zarezerwuj swój termin i&nbsp;przekonaj się, czym jest strzyżenie w&nbsp;klasie premium.</p>
+      <a href="tel:+48600123456" class="btn btn--gold btn--xl" data-cms-tel data-i18n="cta.book">Umów wizytę</a>
+      <p class="booking__phone"><span data-i18n="booking.callLabel">lub zadzwoń:</span> <a href="tel:+48600123456" data-cms="contact.phone" data-cms-tel>+48 600 123 456</a></p>
     </div>
   </section>
 
@@ -340,21 +346,21 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <a href="#hero" class="nav__logo">MISHA<span>BARBER</span></a>
-        <p>Premium barbershop w&nbsp;sercu Krakowa. Precyzja, styl i&nbsp;dbałość o&nbsp;detal.</p>
+        <p data-i18n="footer.tagline">Premium barbershop w&nbsp;sercu Krakowa. Precyzja, styl i&nbsp;dbałość o&nbsp;detal.</p>
       </div>
       <div class="footer__col">
-        <h4>Kontakt</h4>
+        <h4 data-i18n="footer.contact">Kontakt</h4>
         <p><a href="tel:+48600123456" data-cms="contact.phone" data-cms-tel>+48 600 123 456</a></p>
         <p><span data-cms="contact.address_line1">ul. Floriańska 24/3</span><br /><span data-cms="contact.address_line2">31-021 Kraków</span></p>
       </div>
       <div class="footer__col">
-        <h4>Godziny otwarcia</h4>
+        <h4 data-i18n="footer.hours">Godziny otwarcia</h4>
         <p data-cms="contact.hours_weekdays">Pon–Pt: 10:00 – 20:00</p>
         <p data-cms="contact.hours_saturday">Sobota: 09:00 – 16:00</p>
         <p data-cms="contact.hours_sunday">Niedziela: nieczynne</p>
       </div>
       <div class="footer__col">
-        <h4>Social</h4>
+        <h4 data-i18n="footer.social">Social</h4>
         <div class="footer__socials">
           <a href="https://www.instagram.com/misha.barber.krakow" data-cms-href="contact.instagram" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
@@ -368,8 +374,8 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© <span id="year"></span> Misha Barber Kraków. Wszelkie prawa zastrzeżone.</p>
-      <p>Projekt premium · Kraków</p>
+      <p>© <span id="year"></span> Misha Barber Kraków. <span data-i18n="footer.rights">Wszelkie prawa zastrzeżone.</span></p>
+      <p data-i18n="footer.madeby">Projekt premium · Kraków</p>
     </div>
   </footer>
 

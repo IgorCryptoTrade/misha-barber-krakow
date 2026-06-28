@@ -188,6 +188,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--black) !important;
 }
 
+/* ---------- Language switcher ---------- */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 1.6rem;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(6px);
+}
+.lang-switch button {
+  border: none;
+  background: none;
+  color: var(--gray-light);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 0.32rem 0.62rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+}
+.lang-switch button:hover { color: var(--white); }
+.lang-switch button.is-active {
+  background: var(--gold);
+  color: var(--black);
+}
+
 .nav__burger {
   display: none;
   flex-direction: column;
@@ -818,6 +849,7 @@ a { color: inherit; text-decoration: none; }
   .nav__links.is-open { transform: translateX(0); }
   .nav__links a { font-size: 1rem; }
   .nav__burger { display: flex; }
+  .lang-switch { margin-left: auto; margin-right: 0.6rem; }
 
   .why__grid, .services__grid, .reviews__grid { grid-template-columns: 1fr; }
   .masonry { columns: 1; }
