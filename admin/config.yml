@@ -19,6 +19,7 @@ collections:
   - name: tresc
     label: "Treść strony"
     description: "Edytuj teksty, ceny, opinie, zdjęcia i dane kontaktowe w 3 językach (PL / EN / UK)."
+    i18n: true
     files:
       - name: strona
         label: "Strona główna"
